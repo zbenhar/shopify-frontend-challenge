@@ -1,5 +1,5 @@
-import { Box } from "@chakra-ui/react";
-import Home from "./components/Home";
+import { Box } from '@chakra-ui/react';
+import Home from './components/Home';
 
 const App = () => {
   return (

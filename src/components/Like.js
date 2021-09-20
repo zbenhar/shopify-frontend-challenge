@@ -11,10 +11,10 @@ const Like = ({ title }) => {
     const mapper = new Map();
 
     const handleLike = (id) => {
-        console.log(mapper);
         setCounter(counter + 1);
-        mapper.set(id, like); // key value pair
+        mapper.set(id, like);
         setLike(true);
+
         if (like && mapper.get(id) === true) {
             setLike(false);
             setCounter(counter - 1);
@@ -25,7 +25,7 @@ const Like = ({ title }) => {
         myStorage.setItem(id, like);
         if (like === true) {
             const mapper2 = new Map();
-            mapper2.set(id, like); // keeps it as liked in the second map
+            mapper2.set(id, like);
         }
     }
 

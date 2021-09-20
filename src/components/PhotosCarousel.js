@@ -31,31 +31,31 @@ import 'swiper/components/scrollbar/scrollbar.min.css';
 
 
 const useStyles = makeStyles({
-	media: {
-		height: 0,
-		paddingTop: '60%',
-	},
-	swiperContainer: {
-		paddingBottom: '3rem',
-		'& .swiper-pagination-bullet': {
-			background: 'blue',
-		},
-		'& .swiper-button-next:after': {
-			fontSize: '2rem !important',
+    media: {
+        height: 0,
+        paddingTop: '60%',
+    },
+    swiperContainer: {
+        paddingBottom: '3rem',
+        '& .swiper-pagination-bullet': {
+            background: 'blue',
+        },
+        '& .swiper-button-next:after': {
+            fontSize: '2rem !important',
             marginBottom: "100px",
-		},
-		'& .swiper-button-prev:after': {
-			fontSize: '2rem !important',
+        },
+        '& .swiper-button-prev:after': {
+            fontSize: '2rem !important',
             marginBottom: "100px",
-		},
-	},
+        },
+    },
 })
 
 SwiperCore.use([Keyboard, Scrollbar, Pagination, Navigation]);
 const apiKey = process.env.REACT_APP_NASA_API_KEY;
 
 const PhotosCarousel = () => {
-	const { media, swiperContainer } = useStyles();
+    const { media, swiperContainer } = useStyles();
     const [photosData, setPhotosData] = useState(null);
 
     useEffect(() => {
@@ -76,7 +76,7 @@ const PhotosCarousel = () => {
 
     if (!photosData) return <Box />;
 
-	return (
+    return (
         <Box boxShadow="0 3px 10px rgb(0 0 0 / 0.2)">
             <Card>
                 <CardHeader
@@ -99,7 +99,6 @@ const PhotosCarousel = () => {
                     className={swiperContainer}
                 >
                     {photosData.map((photoData, index) => (
-                        <>
                         <SwiperSlide key={index}>
                             <CardMedia className={media} image={photoData.url} />
 
@@ -125,12 +124,11 @@ const PhotosCarousel = () => {
                                 </Typography>
                             </CardContent>
                         </SwiperSlide>
-                    </>
                     ))}
                 </Swiper>
             </Card>
         </Box>
-	)
+    );
 }
 
 export default PhotosCarousel;
