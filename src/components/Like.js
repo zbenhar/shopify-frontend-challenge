@@ -15,7 +15,7 @@ const Like = ({ title }) => {
         mapper.set(id, like);
         setLike(true);
 
-        if (like && mapper.get(id) === true) {
+        if (like && mapper.get(id)) {
             setLike(false);
             setCounter(counter - 1);
             mapper.delete(id);
@@ -23,7 +23,7 @@ const Like = ({ title }) => {
         
         const myStorage = window.localStorage;
         myStorage.setItem(id, like);
-        if (like === true) {
+        if (like) {
             const mapper2 = new Map();
             mapper2.set(id, like);
         }
