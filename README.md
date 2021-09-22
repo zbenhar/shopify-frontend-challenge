@@ -1,7 +1,10 @@
 # Frontend Challenge
 Code is hosted [here](https://keen-meitner-b8fe60.netlify.app/) :)
 
-Note: The app essentially simulates an instagram carousel. As a result, there is a swiping functionality which you can utilize by swiftly dragging each item like you would with a file. You can also just use the arrow icons on each side of the app if you'd prefer to not use the swipe functionality.
+## Note
+The app essentially simulates an instagram carousel. As a result, there is a swiping functionality which you can utilize by swiftly dragging each item like you would with a file. You can also just use the arrow icons on each side of the app, or the left and right arrow keys on your keyboard, if you'd prefer to not use the swipe functionality.
+
+In terms of limitations, you may notice that at times clicking on the `Like` button causes the swipe functionality to process. This is because the `swipe` library used is very responsive and picks up the slightest of movements. I was thinking of displaying each photo fetched from the NASA API as a list with which you can scroll through the page and see each "post" or photo. However, I thought that implementing a carousel-like experience was more interactive and had some interesting frontend challenges to tackle!
 
 # Getting Started with Create React App
 
