@@ -1,6 +1,8 @@
 # Frontend Challenge
 Code is hosted [here](https://keen-meitner-b8fe60.netlify.app/) :)
 
+Note: The app essentially simulates an instagram carousel. As a result, there is a swiping functionality which you can utilize by swiftly dragging each item like you would drag a file. You can also just use the arrow icons on each side of the app if you'd prefer to not use the swipe functionality.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
